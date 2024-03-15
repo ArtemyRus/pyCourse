@@ -3,11 +3,8 @@
 """
 
 def main():
-    inputStr = input().split()
-    s = ""
-    for i in range(len(inputStr)):
-        s += inputStr[i][len(inputStr[i]) - 1]
-    print(s)
+    n = [n[len(n) - 1] for n in input().split()]
+    print("".join(n))
 
 if __name__ == '__main__':
     main()

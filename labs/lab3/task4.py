@@ -4,18 +4,8 @@
 """
 
 def main():
-    n = str(input())
-    if (len(n) % 2 != 0):
-        print("no")
-        exit()
-    count = 0
-    for i in range(len(n)):
-        if n[i] == "0":
-            count += 1
-    if (count == (len(n) // 2)):
-        print("yes")
-    else:
-        print("no")
+    n = [int(x) for x in input()]
+    print("yes") if n.count(0) == len(n) // 2 else print("no")
 
 if __name__ == '__main__':
     main()

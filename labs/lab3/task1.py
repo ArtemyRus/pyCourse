@@ -5,21 +5,10 @@ a, b, c (−1000≤a,b,c≤1000), числа разделены одиночны
 """
 
 def main():
-    a = int(input())
-    b = int(input())
-    c = int(input())
-
-    if (a >= b):
-        if (b >= c): print(b)
-        print(c)
-    elif (c >= b):
-        print(b)
-    elif (a >= c):
-        print(a)
-    else:
-        print(c)
+    l = [int(x) for x in input().split()]
+    l.sort()
+    print(l[1])
 
 if __name__ == '__main__':
     main()
-
 

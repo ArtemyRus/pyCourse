@@ -33,7 +33,7 @@ def decToHex(n):
         n = n // 16
     return s
 
-if __name__ == '__main__':
+def main():
     try:
         n = int(input())
         if (n < 1):
@@ -45,3 +45,6 @@ if __name__ == '__main__':
     print("bin: " + decToBin(n))
     print("oct: " + decToOct(n))
     print("hex: " + decToHex(n))
+
+if __name__ == '__main__':
+    main()

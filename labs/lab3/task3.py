@@ -4,16 +4,9 @@
 """
 
 def main():
-    domain = str(input())
-    s = ""
-    j = len(domain)
+    domain = input().split(".")
     for i in range(len(domain)):
-        if (domain[-i] == "."):
-            s = domain[-i + 1:j]
-            print(s)
-            j = -i
-    s = domain[0:j]
-    print(s)
+        print(domain[-i - 1])
 
 if __name__ == '__main__':
     main()

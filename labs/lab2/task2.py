@@ -4,7 +4,7 @@
 """
 import math
 
-if __name__ == '__main__':
+def main():
     n = float(input())
     print(f"Квадрат со стороной: {n}")
     p = 4 * n
@@ -13,3 +13,6 @@ if __name__ == '__main__':
     print(f"Периметр: {format(p, '.2f')}"
           f"\nПлощадь: {format(s, '.2f')}\n"
           f"Диагональ квадрата: {format(d, '.2f')}")
+
+if __name__ == '__main__':
+    main()

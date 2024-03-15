@@ -2,6 +2,9 @@
 Найдите остаток при делении числа a на b.
 """
 
-if __name__ == '__main__':
+def main():
     a, b = int(input()), int(input())
     print(a % b)
+
+if __name__ == '__main__':
+    main()

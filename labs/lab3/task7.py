@@ -4,12 +4,7 @@
 """
 
 def main():
-    number = str(input())
-    s = ""
-    for i in range(len(number)):
-        if (number[i] != "-" and number[i] != ")" and number[i] != "(" and number[i] != " "):
-            s += number[i]
-    print(s)
+    n = [print(x, end="") for x in input() if x == "+" or x.isnumeric()]
 
 if __name__ == '__main__':
     main()

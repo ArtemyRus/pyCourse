@@ -13,7 +13,10 @@ def foo(s :str, c) -> int:
             break
     return count
 
-if __name__ == '__main__':
+def main():
     inputStr = str(input())
     symb = str(input())
     print(foo(inputStr, symb))
+
+if __name__ == '__main__':
+    main()
